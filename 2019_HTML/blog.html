@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<!--박스 스타일,위치 지정 -->
+	<style>
+	#title{font-size: 50px; font-weight:  bold;}
+	#t1{  font-size: 5vw; }	
+	#letf1{  left: 0px;}
+	#right1{   right: 0px;}
+	#groupbox1{border-style: solid; box-sizing: content-box; width: 140px; height: 250px;  }
+	#groupbox2{border-style: solid; box-sizing: content-box; width: 1700px; height: 300px; margin-left: 150px; margin-top: -210px; }
+	#groupbox3{border-style: solid; box-sizing: content-box; width: 140px; height: 200px;  }
+	#groupbox4{border-style: solid; box-sizing: content-box; width: 1700px; height: 500px; margin-left: 150px; margin-top: -210px; }
+	#groupbox5{border-style: solid; box-sizing: content-box; width: 1700px; height: 500px; margin-left: 150px; margin-top: 0px; }
+	#groupbox6{border-style: solid; box-sizing: content-box; width: 1700px; height: 800px; margin-left: 150px; margin-top: 0px; }
+	
+	.letf1{
+		display: inline-block;
+		width: 150px;
+		height: 100%;
+		background-color:#FAFAB4;
+	}
+	
+
+	</style>
+
+
+	
+</head>
+<body bgcolor="FAFAD2"><!--라이트콜덴 옐로우 색 -->
+  <!--디지털 시계를 위한 함수 -->
+<script>      
+  var inter = 500 ;             
+  function changeObj() {    
+    var obj = document.getElementById('t1'); 
+    var d = new Date();   var h = d.getHours();    
+    var m = d.getMinutes();   var s = d.getSeconds();
+    if ( h < 12)  txt = "AM "; 
+    else  txt = "PM "; 
+    obj.innerHTML =  txt + "  "+ h + " : " + m + " : " + s + "  " ;    
+  } 
+  setInterval(changeObj, inter);    
+</script>
+
+
+<hr>	
+<center>
+<span id="title"> 축구를 사랑하는 블로그</span>
+</center>	
+<hr>
+<br>
+<!--이미지를 가져옴-->
+<img src="C:\Users\USER\Desktop/1.png"width=30% height=auto id="left1">
+&nbsp;
+<span id="t1" ></span>
+&nbsp;
+<img src="C:\Users\USER\Desktop/2.png"width=29% height=auto id="right1" >
+
+
+<br><br>
+<div class="letf1">
+<br>
+
+<div id="groupbox1" >
+<center><h5>최형빈</h5></center>
+학과: 컴퓨터공학부<br>
+학년: 2학년<br>
+학번: 20160960<br>
+취미: 축구시청<br>&nbsp; &nbsp; &nbsp;&nbsp;
+축구기사보기<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button  onclick="alert('추가하였습니다.')">╊이웃추가</button>
+</div>
+
+
+<div id="groupbox2">
+<h4>축구 설명</h4>	
+
+명실상부 전세계 최고의 인기 스포츠로, 손과 팔을 쓰지 않고 공을 상대 골대에 넣는 구기 스포츠를 가리키는 말이다. 손과 팔을 쓰는 것을 금지하고, 골대를 사용하는 것 두 가지는 축구의 본질이자 핵심으로, 이 두 가지를 모두 지키는 스포츠는 축구이거나 축구의 아종으로 분류된다. 따라서 이중 하나라도 훼손된 경우 설령 축구에서 기원했더라도 축구의 아종으로 분류하지 않는다.
+<br><br>
+11명씩 두 팀으로 나뉘어 주로 발과 머리를 사용하며, 손을 제외한 신체 부위로 공을 다루는 구기 스포츠. 정확하게 말하자면 손끝에서 어깨 아래까지 해당하는 부위를 사용한 필드 플레이가 금지되는 것이며, 정해진 크기의 골대 안으로 상대팀보다 더 많은 골을 넣는 팀이 승리하는 경기다. 경기 시간은 정식 성인 경기 기준 전반 45분·후반 45분을 합한 90분이지만, 전·후반 정규시간 이후 주어지는 추가시간이 있기 때문에 실제 경기 시간은 90분을 초과한다.그리고 중간에 쉬는 시간15분이 있다. 두 팀 모두 골 수가 동일하면 무승부로 경기가 끝이 난다. 그러나, 토너먼트에서 꼭 승패를 나눠야 할 경우 연장전을 비롯한 승부차기까지 진행한 끝에 승패를 판가름한다.
+</div>
+
+<div id="groupbox3">
+<center><h5>활동정보</h5></center>
+블로그이웃: 703 명<br>
+글보내기: 1,504 회<br>
+글스크랩 51,104 회
+</div>
+
+<!--하이퍼 링크를 버튼으로 사용, 링크 클릭시 새로운 창으로 열리도록함-->
+<div id="groupbox4">
+<h2>오늘의 주요 뉴스</h2>
+<a href="https://sports.news.naver.com/news.nhn?oid=477&aid=0000224186"target="win2"><button type="button"><img src="C:\Users\USER\Desktop/히딩크감독.png" width="200" / > </button></a><히딩크 감독 PSV 기술 고문 복귀, 中은 비난 '부끄러운 줄 알아라'>
+<a href="https://sports.news.naver.com/news.nhn?oid=413&aid=0000093194"target="win2"><button type="button"><img src="C:\Users\USER\Desktop/안첼로티 감독.png" width="200" / > </button></a><[오피셜] 에버턴, 안첼로티 감독 선임...2024년까지 지휘봉 잡는다><br><br>
+<a href="https://sports.news.naver.com/news.nhn?oid=139&aid=0002125054"target="win2"><button type="button"><img src="C:\Users\USER\Desktop/이승우.png" width="200" / > </button></a><[오피셜] 전반기 데뷔 가능할까...이승우, 안트워프전 소집명단 포함>
+<a href="https://sports.news.naver.com/news.nhn?oid=144&aid=0000648262"target="win2"><button type="button"><img src="C:\Users\USER\Desktop/아스날무승부.png" width="200" / > </button></a><[EPL] 아스날, 에버튼과 졸전 끝 무승부…아르테타는 무표정><br>
+</div>
+
+<!--하이퍼링크 사용-->
+<div id="groupbox5">
+	<h2>팀순위</h2>
+	<img src="C:\Users\USER\Desktop/프리미어리그.png" width="200">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn" target="win2">프리미어 리그 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn" target="win2">프리미어 리그 일정 </a>
+
+	<img src="C:\Users\USER\Desktop/라리가.png" width="150">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn?category=primera&tab=team" target="win2">라리가 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn?category=primera" target="win2">라리가 일정 </a>
+
+	<img src="C:\Users\USER\Desktop/분데스리가.png" width="150">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn?category=bundesliga&tab=team" target="win2">분데스리가 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn?category=bundesliga" target="win2">분데스리가 일정 </a><br><br>
+
+	<img src="C:\Users\USER\Desktop/세리에A.png" width="150">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn?category=seria&tab=team" target="win2">세리에 A 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn?category=seria" target="win2">세리에 A 일정 </a>
+
+	<img src="C:\Users\USER\Desktop/리그1.png" width="150">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn?category=ligue1&tab=team" target="win2">리그1 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn?category=ligue1" target="win2">리그1 일정 </a>
+
+	<img src="C:\Users\USER\Desktop/에레디비시.png" width="150">
+	<a href="https://sports.news.naver.com/wfootball/record/index.nhn?category=eredivisie&tab=team" target="win2">에레디비시 순위 </a>&
+	<a href="https://sports.news.naver.com/wfootball/schedule/index.nhn?category=eredivisie" target="win2">에레디비시 일정 </a><br><br>
+		
+</div>
+
+<!--<iframe>요소를 사용하여 외부파일을 갖고옴-->
+<div id="groupbox6">
+<h3>최신 경기영상</h3>
+<iframe title="[HL] 삼프도리아 vs 유벤투스" width="512" height="288" src="https://play-tv.kakao.com/embed/player/cliplink/404831693?service=daum_sports" allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe><[HL] 삼프도리아 vs 유벤투스>
+<iframe title="[HL] 에버튼 vs 아스날" width="512" height="288" src="https://play-tv.kakao.com/embed/player/cliplink/404912487?service=daum_sports" allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe>
+< HL] 에버튼 vs 아스날><br>
+<iframe title="[전반 HL] 바르셀로나 vs 알라베스" width="512" height="288" src="https://play-tv.kakao.com/embed/player/cliplink/404914632?service=daum_sports" allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe><[전반 HL] 바르셀로나 vs 알라베스>
+<iframe title="'공격의 시발점은 권창훈!' 그리포의 감각적인 동점골 / 후반 14분" width="512" height="288" src="https://play-tv.kakao.com/embed/player/cliplink/404825128?service=daum_sports" allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe><'공격의 시발점은 권창훈!' 그리포의 감각적인 동점골 >
+
+</div>
+
+
+
+
+
+</div>	
+
+</body>
+</html>

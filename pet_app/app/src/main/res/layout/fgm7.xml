@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv7"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:src="@drawable/img7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv7"
+            android:text="연어 스테이크"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn7"
+            android:text="뒤로가기"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재료 : 연어, 코코넛 오일(카놀라유 대체 가능), 브로콜리, 식초"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 연어 껍질 분리 후 코코넛 오일 소량을 두른 뒤 프라이팬에 익혀준다."
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 브로콜리 소량을 식초에 담가둔 뒤 흐르는 물에 씻어준다."
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 팬에 남아있는 연어기름을 이용해서 브로콜리도 살짝 볶아주면 끝!"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

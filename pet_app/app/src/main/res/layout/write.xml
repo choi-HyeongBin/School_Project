@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="글쓰기!"
+    android:textSize="25dp"
+    android:textColor="@android:color/black"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/gallery"
+        android:layout_weight="2"/>
+
+    <EditText
+        android:id="@+id/etspecies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="애완동물 종 ex)고양이"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="성명 ex)은하"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/etmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호 ex)010-xxxx-xxxx"
+        android:layout_weight="1"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+</LinearLayout>
